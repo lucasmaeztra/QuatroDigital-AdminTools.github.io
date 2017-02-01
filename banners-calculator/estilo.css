@@ -1,0 +1,8 @@
+.banner-wrapper form{background:#F44336;}
+.banner-wrapper +.banner-wrapper form{background:#9C27B0;}
+.banner-wrapper +.banner-wrapper +.banner-wrapper form{background:#2196F3;}
+.banner-wrapper +.banner-wrapper +.banner-wrapper +.banner-wrapper form{background:#009688;}
+.banner-wrapper +.banner-wrapper +.banner-wrapper +.banner-wrapper +.banner-wrapper form{background:#827717;}
+.banner-wrapper +.banner-wrapper +.banner-wrapper +.banner-wrapper +.banner-wrapper +.banner-wrapper form{background:#E65100;}
+
+.banner-wrapper{color:#FFF;}

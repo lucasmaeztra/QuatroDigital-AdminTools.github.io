@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Quatro Digital - Cores</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+	<link rel="stylesheet/less" type="text/css" href="colors.less" />
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.ba-bbq/1.2.1/jquery.ba-bbq.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-hashchange/v1.3/jquery.ba-hashchange.min.js"></script>
+	<script src="functions.base.js"></script>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-37678622-4', 'auto');
+		ga('send', 'pageview');
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="row"><div class="col-xs-12">
+			<form class="form-horizontal colorsForm">
+				<div class="form-group">
+					<label for="Color-1" class="col-xs-3 col-sm-2 control-label">Color-1</label> <div class="col-xs-3 col-sm-4"> <input maxlength="7" type="text" class="form-control" id="Color-1" /> <p class="help-block">Cor principal da marca</p></div>
+					<label for="Color-7" class="out-use col-xs-3 col-sm-2 control-label">Color-7</label> <div class="out-use col-xs-3 col-sm-4"> <input maxlength="7" type="text" class="form-control" id="Color-7" /> <p class="help-block">Esta cor não esta em uso!</p></div>
+				</div>
+				<div class="form-group">
+					<label for="Color-2" class="col-xs-3 col-sm-2 control-label">Color-2</label> <div class="col-xs-3 col-sm-4"> <input maxlength="7" type="text" class="form-control" id="Color-2" /> <p class="help-block">Cor secundária da marca</p></div>
+					<label for="Color-8" class="out-use col-xs-3 col-sm-2 control-label">Color-8</label> <div class="out-use col-xs-3 col-sm-4"> <input maxlength="7" type="text" class="form-control" id="Color-8" /> <p class="help-block">Esta cor não esta em uso!</p></div>
+				</div>
+				<div class="form-group">
+					<label for="Color-3" class="col-xs-3 col-sm-2 control-label">Color-3</label> <div class="col-xs-3 col-sm-4"> <input maxlength="7" type="text" class="form-control" id="Color-3" /> <p class="help-block">Cor do callToAction Principal (ex.: botão comprar)</p></div>
+					<label for="Color-9" class="out-use col-xs-3 col-sm-2 control-label">Color-9</label> <div class="out-use col-xs-3 col-sm-4"> <input maxlength="7" type="text" class="form-control" id="Color-9" /> <p class="help-block">Esta cor não esta em uso!</p></div>
+				</div>
+				<div class="form-group">
+					<label for="Color-4" class="col-xs-3 col-sm-2 control-label">Color-4</label> <div class="col-xs-3 col-sm-4"> <input maxlength="7" type="text" class="form-control" id="Color-4" /> <p class="help-block">CallToAction Secundário (ex.: botão de newsletter)</p></div>
+					<label for="Color-10" class="out-use col-xs-3 col-sm-2 control-label">Color-10</label> <div class="out-use col-xs-3 col-sm-4"> <input maxlength="7" type="text" class="form-control" id="Color-10" /> <p class="help-block">Esta cor não esta em uso!</p></div>
+				</div>
+				<div class="form-group">
+					<label for="Color-5" class="col-xs-3 col-sm-2 control-label">Color-5</label> <div class="col-xs-3 col-sm-4"> <input maxlength="7" type="text" class="form-control" id="Color-5" /> <p class="help-block">Cor livre</p></div>
+					<label for="Color-5" class="col-xs-3 col-sm-2 control-label">Neutral-1</label> <div class="col-xs-3 col-sm-4"> <input maxlength="7" type="text" class="form-control" id="Color-11" /> <p class="help-block">Cor Neutral</p></div>
+				</div>
+				<div class="form-group">
+					<label for="Color-6" class="col-xs-3 col-sm-2 control-label">Color-6</label> <div class="col-xs-3 col-sm-4"> <input maxlength="7" type="text" class="form-control" id="Color-6" /> <p class="help-block">Cor Neutra (ex.: cinza)</p></div>
+					<label for="Color-10" class="out-use col-xs-3 col-sm-2 control-label">Neutral-2</label> <div class="out-use col-xs-3 col-sm-4"> <input maxlength="7" type="text" class="form-control" id="Color-12" /> <p class="help-block">Esta cor não esta em uso!</p></div>
+				</div>
+			</form>
+		</div></div>
+
+		<div class="row">
+			<div class="col-xs-12">
+				<h2 class="text-neutral-1-500">Cor padrão dos textos (neutral-1-500)</h2>
+				<p class="text-neutral-1-500"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis lorem vitae tellus euismod, laoreet suscipit lacus congue. </p>
+				<h3 class="text-neutral-1-400">Textos secundários (neutral-1-400)</h3>
+				<p class="text-neutral-1-400">Mauris nec ultricies nisl, at tempor orci. Sed laoreet ipsum a iaculis vehicula. </p>
+				<h4 class="text-neutral-1-300">Textos de dica ou elemento desabilitado (neutral-1-300)</h4>
+				<p class="text-neutral-1-300">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+				<h5 class="text-neutral-1-200">Textos discretos (neutral-1-200)</h5>
+				<p class="text-neutral-1-200">Nam nec eleifend augue, eu luctus ante. Curabitur ultricies nibh nec faucibus mattis.</p>
+				<h6 class="text-neutral-1-100">Textos super discretos (neutral-1-100)</h6>
+				<p class="text-neutral-1-100">Nam nec eleifend augue, eu luctus ante. Curabitur ultricies nibh nec faucibus mattis.</p>
+			</div>
+		</div>
+	</div>
+	<hr />
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-xs-12">
+				<p class="text-neutral-1-500"> Cores Princiapis</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="pallet-box color-1-500">color-1-500</div>
+				<div class="pallet-box color-2-500">color-2-500</div>
+				<div class="pallet-box color-3-500">color-3-500</div>
+				<div class="pallet-box color-4-500">color-4-500</div>
+				<div class="pallet-box color-5-500">color-5-500</div>
+				<div class="pallet-box color-6-500">color-6-500</div>
+				<div class="pallet-box color-7-500">color-7-500</div>
+				<div class="pallet-box color-8-500">color-8-500</div>
+				<div class="pallet-box color-9-500">color-9-500</div>
+				<div class="pallet-box color-10-500">color-10-500</div>
+				<div class="pallet-box neutral-1-500">neutral-1-500</div>
+				<div class="pallet-box neutral-2-500">neutral-2-500</div>
+			</div>
+		</div>
+		<div class="row"><div class="col-xs-12"><hr /></div></div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="pallet-box color-1-50">color-1-50</div>
+				<div class="pallet-box color-1-100">color-1-100</div>
+				<div class="pallet-box color-1-200">color-1-200</div>
+				<div class="pallet-box color-1-300">color-1-300</div>
+				<div class="pallet-box color-1-400">color-1-400</div>
+				<div class="pallet-box color-1-500">color-1-500</div>
+				<div class="pallet-box color-1-600">color-1-600</div>
+				<div class="pallet-box color-1-700">color-1-700</div>
+				<div class="pallet-box color-1-800">color-1-800</div>
+				<div class="pallet-box color-1-900">color-1-900</div>
+			</div>
+		</div>
+		<div class="row"><div class="col-xs-12"><hr /></div></div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="pallet-box color-2-50">color-2-50</div>
+				<div class="pallet-box color-2-100">color-2-100</div>
+				<div class="pallet-box color-2-200">color-2-200</div>
+				<div class="pallet-box color-2-300">color-2-300</div>
+				<div class="pallet-box color-2-400">color-2-400</div>
+				<div class="pallet-box color-2-500">color-2-500</div>
+				<div class="pallet-box color-2-600">color-2-600</div>
+				<div class="pallet-box color-2-700">color-2-700</div>
+				<div class="pallet-box color-2-800">color-2-800</div>
+				<div class="pallet-box color-2-900">color-2-900</div>
+			</div>
+		</div>
+		<div class="row"><div class="col-xs-12"><hr /></div></div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="pallet-box color-3-50">color-3-50</div>
+				<div class="pallet-box color-3-100">color-3-100</div>
+				<div class="pallet-box color-3-200">color-3-200</div>
+				<div class="pallet-box color-3-300">color-3-300</div>
+				<div class="pallet-box color-3-400">color-3-400</div>
+				<div class="pallet-box color-3-500">color-3-500</div>
+				<div class="pallet-box color-3-600">color-3-600</div>
+				<div class="pallet-box color-3-700">color-3-700</div>
+				<div class="pallet-box color-3-800">color-3-800</div>
+				<div class="pallet-box color-3-900">color-3-900</div>
+			</div>
+		</div>
+		<div class="row"><div class="col-xs-12"><hr /></div></div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="pallet-box color-4-50">color-4-50</div>
+				<div class="pallet-box color-4-100">color-4-100</div>
+				<div class="pallet-box color-4-200">color-4-200</div>
+				<div class="pallet-box color-4-300">color-4-300</div>
+				<div class="pallet-box color-4-400">color-4-400</div>
+				<div class="pallet-box color-4-500">color-4-500</div>
+				<div class="pallet-box color-4-600">color-4-600</div>
+				<div class="pallet-box color-4-700">color-4-700</div>
+				<div class="pallet-box color-4-800">color-4-800</div>
+				<div class="pallet-box color-4-900">color-4-900</div>
+			</div>
+		</div>
+		<div class="row"><div class="col-xs-12"><hr /></div></div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="pallet-box color-5-50">color-5-50</div>
+				<div class="pallet-box color-5-100">color-5-100</div>
+				<div class="pallet-box color-5-200">color-5-200</div>
+				<div class="pallet-box color-5-300">color-5-300</div>
+				<div class="pallet-box color-5-400">color-5-400</div>
+				<div class="pallet-box color-5-500">color-5-500</div>
+				<div class="pallet-box color-5-600">color-5-600</div>
+				<div class="pallet-box color-5-700">color-5-700</div>
+				<div class="pallet-box color-5-800">color-5-800</div>
+				<div class="pallet-box color-5-900">color-5-900</div>
+			</div>
+		</div>
+		<div class="row"><div class="col-xs-12"><hr /></div></div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="pallet-box color-6-50">color-6-50</div>
+				<div class="pallet-box color-6-100">color-6-100</div>
+				<div class="pallet-box color-6-200">color-6-200</div>
+				<div class="pallet-box color-6-300">color-6-300</div>
+				<div class="pallet-box color-6-400">color-6-400</div>
+				<div class="pallet-box color-6-500">color-6-500</div>
+				<div class="pallet-box color-6-600">color-6-600</div>
+				<div class="pallet-box color-6-700">color-6-700</div>
+				<div class="pallet-box color-6-800">color-6-800</div>
+				<div class="pallet-box color-6-900">color-6-900</div>
+			</div>
+		</div>
+		<div class="row"><div class="col-xs-12"><hr /></div></div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="pallet-box color-7-50">color-7-50</div>
+				<div class="pallet-box color-7-100">color-7-100</div>
+				<div class="pallet-box color-7-200">color-7-200</div>
+				<div class="pallet-box color-7-300">color-7-300</div>
+				<div class="pallet-box color-7-400">color-7-400</div>
+				<div class="pallet-box color-7-500">color-7-500</div>
+				<div class="pallet-box color-7-600">color-7-600</div>
+				<div class="pallet-box color-7-700">color-7-700</div>
+				<div class="pallet-box color-7-800">color-7-800</div>
+				<div class="pallet-box color-7-900">color-7-900</div>
+			</div>
+		</div>
+		<div class="row"><div class="col-xs-12"><hr /></div></div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="pallet-box color-8-50">color-8-50</div>
+				<div class="pallet-box color-8-100">color-8-100</div>
+				<div class="pallet-box color-8-200">color-8-200</div>
+				<div class="pallet-box color-8-300">color-8-300</div>
+				<div class="pallet-box color-8-400">color-8-400</div>
+				<div class="pallet-box color-8-500">color-8-500</div>
+				<div class="pallet-box color-8-600">color-8-600</div>
+				<div class="pallet-box color-8-700">color-8-700</div>
+				<div class="pallet-box color-8-800">color-8-800</div>
+				<div class="pallet-box color-8-900">color-8-900</div>
+			</div>
+		</div>
+		<div class="row"><div class="col-xs-12"><hr /></div></div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="pallet-box color-9-50">color-9-50</div>
+				<div class="pallet-box color-9-100">color-9-100</div>
+				<div class="pallet-box color-9-200">color-9-200</div>
+				<div class="pallet-box color-9-300">color-9-300</div>
+				<div class="pallet-box color-9-400">color-9-400</div>
+				<div class="pallet-box color-9-500">color-9-500</div>
+				<div class="pallet-box color-9-600">color-9-600</div>
+				<div class="pallet-box color-9-700">color-9-700</div>
+				<div class="pallet-box color-9-800">color-9-800</div>
+				<div class="pallet-box color-9-900">color-9-900</div>
+			</div>
+		</div>
+		<div class="row"><div class="col-xs-12"><hr /></div></div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="pallet-box color-10-50">color-10-50</div>
+				<div class="pallet-box color-10-100">color-10-100</div>
+				<div class="pallet-box color-10-200">color-10-200</div>
+				<div class="pallet-box color-10-300">color-10-300</div>
+				<div class="pallet-box color-10-400">color-10-400</div>
+				<div class="pallet-box color-10-500">color-10-500</div>
+				<div class="pallet-box color-10-600">color-10-600</div>
+				<div class="pallet-box color-10-700">color-10-700</div>
+				<div class="pallet-box color-10-800">color-10-800</div>
+				<div class="pallet-box color-10-900">color-10-900</div>
+			</div>
+		</div>
+		<div class="row"><div class="col-xs-12"><hr /></div></div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="pallet-box neutral-1-100">neutral-1-100</div>
+				<div class="pallet-box neutral-1-200">neutral-1-200</div>
+				<div class="pallet-box neutral-1-300">neutral-1-300</div>
+				<div class="pallet-box neutral-1-400">neutral-1-400</div>
+				<div class="pallet-box neutral-1-500">neutral-1-500</div>
+			</div>
+		</div>
+		<div class="row"><div class="col-xs-12"><hr /></div></div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="pallet-box neutral-2-100">neutral-2-100</div>
+				<div class="pallet-box neutral-2-200">neutral-2-200</div>
+				<div class="pallet-box neutral-2-300">neutral-2-300</div>
+				<div class="pallet-box neutral-2-400">neutral-2-400</div>
+				<div class="pallet-box neutral-2-500">neutral-2-500</div>
+			</div>
+		</div>
+		<div class="row"><div class="col-xs-12"><hr /></div></div>
+	</div>
+</body>
+</html>

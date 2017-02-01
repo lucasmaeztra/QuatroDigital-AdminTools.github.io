@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title>Quatro Digital</title>
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-37678622-4', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	
+	<script src="functions.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1 class="text-center">Quatro Digtial</h1>
+				<hr />
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12">
+				<form class="profile-url-form">
+					<div class="form-group">
+						<label for="profile-url">URL do seu perfil na comunidade:</label>
+						<input type="url" class="form-control" id="profile-url" placeholder="http://lab.vtex.com/community/users/000/joao.html">
+					</div>
+					<button type="submit" class="btn btn-default">Enviar</button>
+				</form>
+			</div>
+			<div class="col-xs-12">
+				<div class="user-welcome hide">
+					<p>Olá, <span class="data_user-name"></span> <img class="data_user-avatar"></p>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<hr />
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+					<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="userQuestions">
+							<h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#user-questions" aria-expanded="true" aria-controls="user-questions">100 últimas perguntas feitas por <span class="data_user-username"></span> </a> </h4>
+						</div>
+						<div id="user-questions" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="userQuestions">
+							<div class="panel-body">
+								<div class="data_user-questions"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="userAnswers">
+							<h4 class="panel-title"> <a role="button" data-toggle="collapse" data-parent="#accordion" href="#user-answers" aria-expanded="true" aria-controls="user-answers">Últimas respostas feitas por <span class="data_user-username"></span> </a> </h4>
+						</div>
+						<div id="user-answers" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="userAnswers">
+							<div class="panel-body">
+								<div class="data_user-answers"></div>
+								<button type="button" class="btn btn-primary user-answers-next-page">Buscar mais</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

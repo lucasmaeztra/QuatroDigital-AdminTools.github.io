@@ -1,0 +1,21 @@
+body {
+    padding-bottom: 200px;
+}
+.json-qd-v1-import-field label {
+    display: none;
+}
+.has-error label {
+    display: block;
+    margin-top: 10px;
+}
+
+#editor h3 + .well.well-sm {
+    padding: 0;
+}
+.table th:last-child,
+.table td:last-child {
+	min-width: 130px;
+}
+.lang-qd-v1-wrapper {
+	display: inline-block;
+}
