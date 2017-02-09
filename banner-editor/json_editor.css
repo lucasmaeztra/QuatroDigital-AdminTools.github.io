@@ -19,3 +19,16 @@ body {
 .lang-qd-v1-wrapper {
 	display: inline-block;
 }
+.mosaic-qd-v1-legend {
+	display: none;
+}
+.row {
+	margin-bottom: 10px;
+}
+#editor h3 + .well.well-sm {
+	overflow: auto;
+}
+.mosaic-qd-v1-image img {
+	// width: 100%;
+	margin: 0 auto;
+}
