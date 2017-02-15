@@ -16,6 +16,9 @@ body {
 .table td:last-child {
 	min-width: 130px;
 }
+.table {
+	width: 100% !important;
+}
 .lang-qd-v1-wrapper {
 	display: inline-block;
 }
@@ -32,11 +35,9 @@ body {
 	// width: 100%;
 	margin: 0 auto;
 }
-
 .slick-dots {
 	bottom: 35px;
 }
-
 .slick-dots li button:before {
 	font-size: 36px;
 }
