@@ -104,8 +104,8 @@ try {
 					"@color-8": colors[8],
 					"@color-9": colors[9],
 					"@color-10": colors[10],
-					"@neutral-1": colors[11],
-					"@neutral-2": colors[12]
+					"@text-color-1": colors[11],
+					"@text-color-2": colors[12]
 				});
 
 				Common.inputs[1].val(colors[1]).change();
