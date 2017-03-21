@@ -14,8 +14,11 @@ body {
 }
 .table th:last-child,
 .table td:last-child {
-	min-width: 120px;
+	min-width: 130px;
 }
 .lang-qd-v1-wrapper {
 	display: inline-block;
+}
+.table {
+	width: 100% !important;
 }

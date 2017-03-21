@@ -93,18 +93,15 @@ var schemas = {
 	},
 	"lion=pt": {
 		json: "https://lion-of-porches-cdn.github.io/stores-pt.json",
-		title: "Lion of Porches",
-		basis: "lion-en"
+		basis: "lion=en"
 	},
 	"lion=es": {
 		json: "https://lion-of-porches-cdn.github.io/stores-es.json",
-		title: "Lion of Porches",
-		basis: "lion-en"
+		basis: "lion=en"
 	},
 	"lion=fr": {
 		json: "https://lion-of-porches-cdn.github.io/stores-fr.json",
-		title: "Lion of Porches",
-		basis: "lion-en"
+		basis: "lion=en"
 	},
 	mahogany: {
 		json: "https://qd-mahogany-cdn.github.io/arquivos/store.json",

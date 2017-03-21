@@ -9,12 +9,14 @@
 
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="slick.css" />
+    <link rel="stylesheet" href="slick-theme.css" />
     <link rel="stylesheet" href="json_editor.css">
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="slick.min.js"></script>
     <script src='jsoneditor.min.js'></script>
-    <script src="schemas.js" type="text/javascript"></script>
     <script src="functions.base.js" type="text/javascript"></script>
 </head>
 <body>
@@ -30,7 +32,20 @@
         <div class="row">
             <div class="col-xs-12">
                 <div class="json-qd-v1-manage-buttons">
+                    <button class="btn btn-primary btn-sm import-toggle"><i class="fa fa-upload"></i> Importar HTML</button>
                     <button class="btn btn-danger btn-sm json-qd-v1-delete-all"><i class="fa fa-trash"></i> Limpar Conteúdo</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="json-qd-v1-import-field" style="display: none;">
+            <div class="row">
+                <div class="col-xs-12">
+                    <form>
+                        <label for="input" class="control-label">O JSON inserido não é válido</label>
+                        <textarea id='input' style='width: 100%; height: 200px; margin: 10px 0;' placeholder="Cole o conteúdo JSON aqui e clique em 'Carregar Conteúdo'" class='form-control'></textarea>
+                        <button class="btn btn-success btn-sm" type="button" id="setvalue"><i class="fa fa-download"></i> Carregar conteúdo</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -41,9 +56,24 @@
             </div>
         </div>
 
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3>Preview</h3>
+                    <div class="slide-qd-v1-toggle">
+                        <label>
+                            <span>Slide</span>
+                            <input type="checkbox" class="json-qd-v1-output-preview-slide"/>   
+                        </label>
+                    </div>
+                    <div class="json-qd-v1-output-preview well"></div>
+                </div>
+            </div>
+        </div>
+
         <div class="row">
             <div class="col-xs-12">
-                <button class="btn btn-primary btn-sm json-qd-v1-output-field-button"><i class="fa fa-code"></i> Gerar Código HTML</button>
+                <button class="btn btn-primary btn-sm json-qd-v1-output-field-button" onclick="$('.json-qd-v1-output-field').slideToggle(500);"><i class="fa fa-code"></i> Exibir Código HTML</button>
             </div>
         </div>
 
