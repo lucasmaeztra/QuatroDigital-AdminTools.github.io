@@ -129,50 +129,51 @@ var schemas = {
 			}
 		}
 	},
+	mahoganyV2: {
+		json: "https://qd-mahogany-cdn.github.io/arquivos/store-v2.json",
+		title: 'Mahogany',
+		properties: {
+			store: {
+				items: {
+					properties: {
+						addressType: {
+							type: "string",
+							title: {
+								default: "Tipo",
+								"en": "Type"
+							},
+							enum: [
+							"Loja",
+							"Espaço",
+							"Revendedor",
+							"Todas"
+							],
+							default: "Todas"
+						},
+						email: {
+							type: "string",
+							title: {
+								default: "E-mail",
+								"en": "email"
+							}
+						}
+					}
+				}
+			}
+		}
+	},
 	drogariasp: {
 		json: "",
 		title: 'Drogaria São Paulo',
 		properties: {
 			store: {
-				type: "array",
-				format: "table",
-				title: "Lojas",
-				uniqueItems: true,
 				items: {
-					type: "object",
-					title: "Loja",
 					properties: {
-						title: {
-							type: "string",
-							title: {
-								default: "Titulo",
-								"en": "Title"
-							}
-						},
-						address: {
-							type: "string",
-							title: {
-								default: "Endereço",
-								"en": "Address"
-							}
-						},
 						attendance: {
 							type: "string",
 							title: {
 								default: "Horário de Funcionamento",
 								"en": "Attendance"
-							}
-						},
-						latitude: {
-							type: "number",
-							title: {
-								default: "Latitude"
-							}
-						},
-						longitude: {
-							type: "number",
-							title: {
-								default: "Longitude"
 							}
 						}
 					}
