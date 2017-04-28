@@ -129,6 +129,57 @@ var schemas = {
 			}
 		}
 	},
+	drogariasp: {
+		json: "",
+		title: 'Drogaria São Paulo',
+		properties: {
+			store: {
+				type: "array",
+				format: "table",
+				title: "Lojas",
+				uniqueItems: true,
+				items: {
+					type: "object",
+					title: "Loja",
+					properties: {
+						title: {
+							type: "string",
+							title: {
+								default: "Titulo",
+								"en": "Title"
+							}
+						},
+						address: {
+							type: "string",
+							title: {
+								default: "Endereço",
+								"en": "Address"
+							}
+						},
+						attendance: {
+							type: "string",
+							title: {
+								default: "Horário de Funcionamento",
+								"en": "Attendance"
+							}
+						},
+						latitude: {
+							type: "number",
+							title: {
+								default: "Latitude"
+							}
+						},
+						longitude: {
+							type: "number",
+							title: {
+								default: "Longitude"
+							}
+						}
+					}
+				}
+			}
+		}
+	},
 	example: {
 		json: "URL do JSON da loja",
 		title: 'Nome da Loja',
