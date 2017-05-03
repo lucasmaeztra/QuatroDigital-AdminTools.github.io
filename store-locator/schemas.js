@@ -163,7 +163,7 @@ var schemas = {
 		}
 	},
 	drogariasp: {
-		json: "",
+		json: "https://qd-cdn.github.io/drogariasp-arquivos/store.json",
 		title: 'Drogaria São Paulo',
 		properties: {
 			store: {
