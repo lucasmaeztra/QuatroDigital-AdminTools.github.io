@@ -175,6 +175,13 @@ var schemas = {
 								default: "Horário de Funcionamento",
 								"en": "Attendance"
 							}
+						},
+						logistics: {
+							type: "string",
+							title: {
+								default: "Logistics",
+								"en": "Logistics"
+							}
 						}
 					}
 				}
