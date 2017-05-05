@@ -179,7 +179,7 @@ var schemas = {
 						logistics: {
 							type: "string",
 							title: {
-								default: "Logistics",
+								default: "Nome da Transportadora",
 								"en": "Logistics"
 							}
 						}
