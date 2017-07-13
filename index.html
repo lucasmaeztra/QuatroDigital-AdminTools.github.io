@@ -1,87 +1,566 @@
 <!DOCTYPE html>
-<html lang="pt-BR" ng-app>
+<html>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title>Quatro Digital - QD Admin Tools</title>
-
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
-		<script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-		<script src="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
-
-	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
-
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		ga('create', 'UA-37678622-4', 'auto');
-		ga('send', 'pageview');
-	</script>
-
-	<style>
-		a:hover{text-decoration: none;}
-	</style>
+  <!-- Site made with Mobirise Website Builder v3.12.1, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v3.12.1, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <meta name="description" content="QD Admin Tools é uma barra de ferramentas gratuita para lojas virtuais VTEX. Possui atalhos e funcionalidades que torna sua rotina mais fácil e ágil.">
+  <title>Ferramenta gratuita para plataforma VTEX - QD Admin Tools</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;subset=latin">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+  <link rel="stylesheet" href="assets/bootstrap-material-design-font/css/material.css">
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+  <link rel="stylesheet" href="assets/et-line-font-plugin/style.css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/animate.css/animate.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
 </head>
 <body>
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12">
-				<div class="text-center">
-					<h1><a href="http://www.quatrodigital.com.br" title="Quatro Digital - Melhor agência VTEX"><img src="img/logo_quatro_800x328.png" alt="Quatro Digital" class="img-responsive center-block"></a></h1>
-					<h2>QD Admin Tools</h2>
-					<p class="lead">Qual sua loja na VTEX?</p>
-					<form class="form-inline">
-						<div class="form-group">
-							<label for="store">Loja: </label>
-							<input type="text" class="form-control" id="store" placeholder="minha-loja" ng-model="store">
-						</div>
-					</form>
-					<p>
-						<a href="http://{{store}}.vtexcommercestable.com.br?qd-admintools=true">http://{{store}}.vtexcommercestable.com.br?qd-admintools=true</a>
-					</p>
-				</div>
-			</div>
-		</div>
 
-		<hr>
-		<div class="row">
-			<div class="col-xs-12">
-				<p>Acompanhe o <a href="http://lab.vtex.com/community/questions/8179/barra-de-ferramentas-p-vtex-similar-a-wordpress-gr.html" target="_blank">tópico na comunidade VTEX</a>.</p>
-			</div>
-		</div>
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-		<hr>
-		<div class="row">
-			<div class="col-xs-12">
-				<p>Instale aqui: <a href="https://chrome.google.com/webstore/detail/qd-admin-tools/nhmiadhhhapnkfkmfgagdhoapmenlddc" target="_blank"><img src="img/ChromeWebStore_Badge_v2_206x58.png" alt="Disponível na Chrome Web Store"/></a>.</p>
-			</div>
-		</div>
+ ga('create', 'UA-37678622-4', 'auto');
+  ga('send', 'pageview');
 
-		<hr>
-		<div class="row">
-			<div class="col-xs-12">
-				<h2>COMO USAR</h2>
-				<ol>
-					<li> Instale a extensão; </li>
-					<li> Entre no ambiente .vtexcommercestable da sua loja; </li>
-					<li> Insira <code>?&qd-admintools=true</code> no final da URL e aperte ENTER (Ex: <code>loja.vtexcommercestable.com.br/?&qd-admintools=true</code>); </li>
-					<li> Espere carregar a página e comece a navegar! </li>
-				</ol>
-			</div>
-		</div>
-	</div>
-</body>
+</script>
+<!-- /Google Analytics -->
+
+
+<section id="ext_menu-0">
+
+    <nav class="navbar navbar-dropdown bg-color transparent navbar-fixed-top">
+        <div class="container">
+
+            <div class="mbr-table">
+                <div class="mbr-table-cell">
+
+                    <div class="navbar-brand">
+                        <a href="index.html" class="navbar-logo"><img src="assets/images/logo-qd-admin-tools-128x128.png" alt="Mobirise"></a>
+                        <a class="navbar-caption" href="index.html">QD Admin Tools</a>
+                    </div>
+
+                </div>
+                <div class="mbr-table-cell">
+
+                    <button class="navbar-toggler pull-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+                        <div class="hamburger-icon"></div>
+                    </button>
+
+                    <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar"><li class="nav-item"><a class="nav-link link" href="index.html#msg-box8-j">O QUE É?</a></li><li class="nav-item"><a class="nav-link link" href="index.html#features7-f">FUNCIONALIDADES</a></li><li class="nav-item"><a class="nav-link link" href="index.html#msg-box4-19">VIDEO</a></li><li class="nav-item nav-btn"><a class="nav-link btn btn-white btn-white-outline" href="http://agencia.quatrodigital.com.br/inquiry/contato/" target="_blank">CONTATO</a></li><li class="nav-item nav-btn"><a class="nav-link btn btn-primary" href="https://chrome.google.com/webstore/detail/qd-admin-tools/nhmiadhhhapnkfkmfgagdhoapmenlddc?hl=pt-BR" target="_blank">INSTALAR</a></li></ul>
+                    <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+                        <div class="close-icon"></div>
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+</section>
+
+<section class="engine"><a rel="external" href="https://mobirise.com">Mobirise Site Builder</a></section><section class="mbr-section mbr-section-hero mbr-section-full mbr-parallax-background mbr-section-with-arrow mbr-after-navbar" id="header1-3" style="background-image: url(assets/images/2017-06-quatro-digital-hotsite-qd-admin-tools-2000x1333.jpg);">
+
+    <div class="mbr-overlay" style="opacity: 0.6; background-color: rgb(0, 0, 0);"></div>
+
+    <div class="mbr-table-cell">
+
+        <div class="container">
+            <div class="row">
+                <div class="mbr-section col-md-10">
+
+                    <h1 class="mbr-section-title display-1">ECONOMIZE TEMPO<br>E DINHEIRO</h1>
+                    <p class="mbr-section-lead lead">Essencial para a <strong>administração da sua loja virtual VTEX</strong>.<strong>&nbsp;</strong>Uma ferramenta de&nbsp;auxilio em pequenas e grandes tarefas, fazendo o seu dia-a-dia ser mais produtivo</p>
+                    <div class="mbr-section-btn"><a class="btn btn-lg btn-primary" href="https://chrome.google.com/webstore/detail/qd-admin-tools/nhmiadhhhapnkfkmfgagdhoapmenlddc?hl=pt-BR" target="_blank"><strong>INSTALE GRATUITAMENTE</strong></a> <a class="btn btn-lg btn-white btn-white-outline" href="index.html#msg-box8-j"><strong>SAIBA MAIS</strong></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mbr-arrow mbr-arrow-floating" aria-hidden="true"><a href="#msg-box8-j"><i class="mbr-arrow-icon"></i></a></div>
+
+</section>
+
+<section class="mbr-section article" id="msg-box8-j" style="background-color: rgb(250, 167, 27); padding-top: 120px; padding-bottom: 120px;">
+
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-xs-center">
+                <h3 class="mbr-section-title display-2">O QUE É QD Admin Tools?</h3>
+                <div class="lead"><p><strong>QD Admin Tools</strong> é uma barra de ferramentas <strong>gratuita</strong> para lojas virtuais <strong>VTEX</strong>. Possui&nbsp;<strong>atalhos e funcionalidades</strong> para <strong>agilizar a edição de produtos e conteúdos</strong>, tornando o processo de administração e tarefas de rotina mais rápido e fácil.<br><br>Torne seu dia a dia com <strong>VTEX</strong> mais produtivo.</p></div>
+                
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="mbr-section" id="msg-box5-7" style="background-color: rgb(255, 255, 255); padding-top: 120px; padding-bottom: 120px;">
+
+    
+    <div class="container">
+        <div class="row">
+            <div class="mbr-table-md-up">
+
+              
+
+              <div class="mbr-table-cell col-md-5 text-xs-center text-md-right content-size">
+                  <h3 class="mbr-section-title display-2">CRIADO PARA O ECOSSISTEMA VTEX</h3>
+                  <div class="lead">
+
+                    <p>A <a href="http://agencia.quatrodigital.com.br/" target="_blank"><strong>Quatro Digital</strong></a> é uma agência <strong>especialista em plataforma <a href="http://vtex.com/" target="_blank"><b>VTEX</b></a> </strong>que nasceu em 2013. Implantamos <strong>mais de 500</strong> projetos dentro da plataforma e atendemos cerca de <strong>175 marcas</strong> de diversos segmentos. <br><br>Criamos o <strong>QD Admin Tools</strong> com a intenção de ajudar desenvolvedores e lojistas do ecossistema VTEX a serem mais produtivos.<br></p>
+
+                  </div>
+
+                  
+              </div>
+
+
+              
+
+
+              <div class="mbr-table-cell mbr-left-padding-md-up mbr-valign-top col-md-7 image-size" style="width: 50%;">
+                  <div class="mbr-figure"><img src="assets/images/2017-06-quatro-digital-hotsite-qd-admin-tools-logos-1400x1400.jpg"></div>
+              </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="mbr-section" id="msg-box5-8" style="background-color: rgb(239, 239, 239); padding-top: 120px; padding-bottom: 120px;">
+
+    
+    <div class="container">
+        <div class="row">
+            <div class="mbr-table-md-up">
+
+              <div class="mbr-table-cell mbr-right-padding-md-up mbr-valign-top col-md-7 image-size" style="width: 50%;">
+                  <div class="mbr-figure"><img src="assets/images/funcionalidades-vtex-1400x1141.png"></div>
+              </div>
+
+              
+
+
+              <div class="mbr-table-cell col-md-5 text-xs-center text-md-left content-size">
+                  <h3 class="mbr-section-title display-2">DEZENAS DE FUNÇÕES</h3>
+                  <div class="lead">
+
+                    <p>Com atualizações periodicas, a ferramenta já é comprovadamente um item <strong>indispensável para lojistas VTEX</strong>. Dezenas de utilidades, informações e atalhos a poucos cliques de distância.</p>
+
+                  </div>
+
+                  
+              </div>
+
+
+              
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="mbr-section" id="msg-box5-9" style="background-color: rgb(255, 255, 255); padding-top: 120px; padding-bottom: 120px;">
+
+    
+    <div class="container">
+        <div class="row">
+            <div class="mbr-table-md-up">
+
+              
+
+              <div class="mbr-table-cell col-md-5 text-xs-center text-md-right content-size">
+                  <h3 class="mbr-section-title display-2">SEGURO E CONFIÁVEL</h3>
+                  <div class="lead">
+
+                    <p>Funciona somente quando você está logado no seu ambiente <strong>VTEX Commerce Stable</strong>. Isso garante a<strong> segurança dos seus dados</strong>, pois somente quem tem perfil de acesso à sua loja consegue visualizar e editar os dados da loja virtual.</p>
+
+                  </div>
+
+                  
+              </div>
+
+
+              
+
+
+              <div class="mbr-table-cell mbr-left-padding-md-up mbr-valign-top col-md-7 image-size" style="width: 50%;">
+                  <div class="mbr-figure"><img src="assets/images/seguranca-vtex-1400x1141.png"></div>
+              </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="mbr-section mbr-section__container article" id="header3-e" style="background-color: rgb(239, 239, 239); padding-top: 80px; padding-bottom: 20px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h3 class="mbr-section-title display-2">FUNCIONALIDADES</h3>
+                <small class="mbr-section-subtitle">Conheça o que faz o QD Admin Tools ser essencial para seu dia a dia como gerente de e-commerce VTEX</small>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-cards mbr-section mbr-section-nopadding" id="features7-f" style="background-color: rgb(239, 239, 239);">
+
+    
+
+    <div class="mbr-cards-row row">
+        <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 80px; padding-bottom: 120px;">
+            <div class="container">
+                <div class="card cart-block">
+                    <div class="card-img iconbox"><a href="https://mobirise.com" class="mbri-edit2 mbr-iconfont mbr-iconfont-features7" style="color: rgb(255, 255, 255);"></a></div>
+                    <div class="card-block">
+                        <h4 class="card-title">Edite e altere os detalhes das páginas</h4>
+                        
+                        <p class="card-text">Edite e verifique detalhes e informações de suas páginas com mais rapidez e facilidade.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 80px; padding-bottom: 120px;">
+            <div class="container">
+                <div class="card cart-block">
+                    <div class="card-img iconbox"><a href="https://mobirise.com" class="mbri-touch mbr-iconfont mbr-iconfont-features7" style="color: rgb(255, 255, 255);"></a></div>
+                    <div class="card-block">
+                        <h4 class="card-title">Atalhos para facilitar suas tarefas</h4>
+                        
+                        <p class="card-text">Atalhos para configuração e edição na interface da loja.&nbsp;</p>
+                        
+                    </div>
+                </div>
+          </div>
+        </div>
+        <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 80px; padding-bottom: 120px;">
+            <div class="container">
+                <div class="card cart-block">
+                    <div class="card-img iconbox"><a href="https://mobirise.com" class="mbri-cash mbr-iconfont mbr-iconfont-features7" style="color: rgb(255, 255, 255);"></a></div>
+                    <div class="card-block">
+                        <h4 class="card-title">Confira e modifique o preço dos produtos e SKUs</h4>
+                        
+                        <p class="card-text">Com a ferramenta, é possível conferir todos SKUs atrelados a um produto de maneira mais visual, diretamente da interface da loja.&nbsp;</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 80px; padding-bottom: 120px;">
+            <div class="container">
+                <div class="card cart-block">
+                    <div class="card-img iconbox"><a href="https://mobirise.com" class="mbri-features mbr-iconfont mbr-iconfont-features7" style="color: rgb(255, 255, 255);"></a></div>
+                    <div class="card-block">
+                        <h4 class="card-title">Visualize e altere categorias similares</h4>
+                        
+                        <p class="card-text">Veja todas categorias similares da qual o produto pertence para corrigir ou alterar suas configurações.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</section>
+
+<section class="mbr-cards mbr-section mbr-section-nopadding" id="features7-g" style="background-color: rgb(239, 239, 239);">
+
+    
+
+    <div class="mbr-cards-row row">
+        <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 80px; padding-bottom: 160px;">
+            <div class="container">
+                <div class="card cart-block">
+                    <div class="card-img iconbox"><a href="https://mobirise.com" class="mbri-magic-stick mbr-iconfont mbr-iconfont-features7" style="color: rgb(255, 255, 255);"></a></div>
+                    <div class="card-block">
+                        <h4 class="card-title">Edite individualmente cada SKU de um produto</h4>
+                        
+                        <p class="card-text">Edite a lista de variações cadastrada por cada produto: cor, tamanho, material. Visualize a quantidade disponível em estoque com os atalhos de edição. &nbsp;</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 80px; padding-bottom: 160px;">
+            <div class="container">
+                <div class="card cart-block">
+                    <div class="card-img iconbox"><a href="https://mobirise.com" class="mbri-sites mbr-iconfont mbr-iconfont-features7" style="color: rgb(255, 255, 255);"></a></div>
+                    <div class="card-block">
+                        <h4 class="card-title">Visão geral de todas informações</h4>
+                        
+                        <p class="card-text">Com apenas 1 clique é possível saber de maneira simples e organizada: preço de cada SKU, código de referência, marca, departamento, categoria, SKUs e quantidade disponível em estoque.</p>
+                        
+                    </div>
+                </div>
+          </div>
+        </div>
+        <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 80px; padding-bottom: 160px;">
+            <div class="container">
+                <div class="card cart-block">
+                    <div class="card-img iconbox"><a href="https://mobirise.com" class="mbri-idea mbr-iconfont mbr-iconfont-features7" style="color: rgb(255, 255, 255);"></a></div>
+                    <div class="card-block">
+                        <h4 class="card-title">Auto detecção de erros</h4>
+                        
+                        <p class="card-text">Identifique políticas comerciais, scripts, arquivos de estilo, marca e departamentos. Informações necessárias para encontrar e corrigir erros de configuração e/ou layout.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mbr-cards-col col-xs-12 col-lg-3" style="padding-top: 80px; padding-bottom: 160px;">
+            <div class="container">
+                <div class="card cart-block">
+                    <div class="card-img iconbox"><a href="https://mobirise.com" class="mbri-database mbr-iconfont mbr-iconfont-features7" style="color: rgb(255, 255, 255);"></a></div>
+                    <div class="card-block">
+                        <h4 class="card-title">Dados técnicos</h4>
+                        
+                        <p class="card-text">Equipes de desenvolvimento e implantação de VTEX terão uma visão geral e muito mais apurada. Com apenas um clique é possível ver arquivos de CSS e JS que estão sendo chamados na página.&nbsp;</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</section>
+
+<section class="mbr-section" id="testimonials1-18" style="background-color: rgb(255, 255, 255); padding-top: 120px; padding-bottom: 120px;">
+
+    
+
+        <div class="mbr-section mbr-section__container mbr-section__container--middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-xs-center">
+                        <h3 class="mbr-section-title display-2">O QUE DIZEM</h3>
+                        <small class="mbr-section-subtitle">Comentários reais de quem usa no dia a dia para resolução de problemas no dia a dia com VTEX</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <div class="mbr-testimonials mbr-section mbr-section-nopadding">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-12 col-md-6">
+
+                    <div class="mbr-testimonial card mbr-testimonial-lg">
+                        <div class="card-block"><p>"Adorei! Muito útil mesmo para quem lida com catálogo de produtos na VTEX."</p></div>
+                        <div class="mbr-author card-footer">
+                            <div class="mbr-author-img"><img src="assets/images/juliana-vtex-160x160.jpg" class="img-circle"></div>
+                            <div class="mbr-author-name">Juliana Reche</div>
+                            <small class="mbr-author-desc">Usuária do QD Admin Tools</small>
+                        </div>
+                    </div>
+                </div><div class="col-xs-12 col-md-6">
+
+                    <div class="mbr-testimonial card mbr-testimonial-lg">
+                        <div class="card-block"><p>"Muito util no dia a dia!"<br><br></p></div>
+                        <div class="mbr-author card-footer">
+                            <div class="mbr-author-img"><img src="assets/images/favio-barbosa-vtex-160x160.jpg" class="img-circle"></div>
+                            <div class="mbr-author-name"><p>Fabio Barbosa</p></div>
+                            <small class="mbr-author-desc">Solution Architect @ VTEX</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="mbr-section mbr-section-hero mbr-section-full mbr-parallax-background" id="header5-i" style="background-image: url(assets/images/quatro-digital-vtex-2000x1123.png);">
+
+    <div class="mbr-overlay" style="opacity: 0.9; background-color: rgb(0, 0, 0);"></div>
+
+    <div class="mbr-table-cell">
+
+        <div class="container">
+            <div class="row">
+                <div class="mbr-section col-md-10">
+
+                    <h1 class="mbr-section-title display-1">+ DE 200 USUÁRIOS</h1>
+                    <p class="mbr-section-lead lead">Disponível <strong>GRATUITAMENTE</strong>&nbsp;para o <strong>navegador Chrome</strong> na loja de aplicativos <strong>Chrome Web Store</strong>.<br><br><strong>Instale com apenas 1 clique!</strong><br></p>
+                    <div class="mbr-section-btn"><a class="btn btn-lg btn-primary" href="https://chrome.google.com/webstore/detail/qd-admin-tools/nhmiadhhhapnkfkmfgagdhoapmenlddc?hl=pt-BR" target="_blank"><strong>INSTALE AGORA!</strong></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+</section>
+
+<section class="mbr-section" id="msg-box4-19" style="background-color: rgb(250, 167, 27); padding-top: 120px; padding-bottom: 120px;">
+
+    
+    <div class="container">
+        <div class="row">
+            <div class="mbr-table-md-up">
+
+              <div class="mbr-table-cell mbr-right-padding-md-up mbr-valign-top col-md-7 image-size" style="width: 62%;">
+                  <div class="mbr-figure"><iframe class="mbr-embedded-video" src="https://www.youtube.com/embed/4EZFebDrYHk?rel=0&amp;amp;showinfo=0&amp;autoplay=0&amp;loop=0" width="1280" height="720" frameborder="0" allowfullscreen></iframe></div>
+              </div>
+
+              
+
+
+              <div class="mbr-table-cell col-md-5 text-xs-center text-md-left content-size">
+                  <h3 class="mbr-section-title display-2">VIDEO DEMONSTRAÇÃO</h3>
+                  <div class="lead">
+
+                    <p></p><p>Assista ao video gravado durante um Webinar onde apresentamos 3 funcionalidades gratuitas para VTEX. Demonstramos as principais ferramentas de uso do QD Admin Tools em diversos cenários da plataforma.</p><p></p>
+
+                  </div>
+
+                  <div><a class="btn btn-black" href="https://chrome.google.com/webstore/detail/qd-admin-tools/nhmiadhhhapnkfkmfgagdhoapmenlddc?hl=pt-BR" target="_blank"><strong>INSTALAR</strong></a></div>
+              </div>
+
+
+              
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="mbr-section article mbr-section__container" id="content1-z" style="background-color: rgb(255, 255, 255); padding-top: 80px; padding-bottom: 20px;">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 lead"><p>Empresas que confiam em nossos produtos e serviços</p></div>
+        </div>
+    </div>
+
+</section>
+
+<section class="mbr-cards mbr-section mbr-section-nopadding" id="features3-y" style="background-color: rgb(255, 255, 255);">
+
+    
+
+    <div class="mbr-cards-row row">
+        <div class="mbr-cards-col col-xs-12 col-lg-2" style="padding-top: 40px; padding-bottom: 80px;">
+            <div class="container">
+              <div class="card cart-block">
+                  <div class="card-img"><img src="assets/images/araujo-600x147-73.png" class="card-img-top"></div>
+                  
+                </div>
+            </div>
+        </div>
+        <div class="mbr-cards-col col-xs-12 col-lg-2" style="padding-top: 40px; padding-bottom: 80px;">
+            <div class="container">
+                <div class="card cart-block">
+                    <div class="card-img"><img src="assets/images/havan-600x147-49.png" class="card-img-top"></div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="mbr-cards-col col-xs-12 col-lg-2" style="padding-top: 40px; padding-bottom: 80px;">
+            <div class="container">
+                <div class="card cart-block">
+                    <div class="card-img"><img src="assets/images/mahogany-600x147-69.png" class="card-img-top"></div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="mbr-cards-col col-xs-12 col-lg-2" style="padding-top: 40px; padding-bottom: 80px;">
+            <div class="container">
+                <div class="card cart-block">
+                    <div class="card-img"><img src="assets/images/vestem-600x147-73.png" class="card-img-top"></div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="mbr-cards-col col-xs-12 col-lg-2" style="padding-top: 40px; padding-bottom: 80px;">
+            <div class="container">
+                <div class="card cart-block">
+                    <div class="card-img"><img src="assets/images/x5-600x147-76.png" class="card-img-top"></div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="mbr-cards-col col-xs-12 col-lg-2" style="padding-top: 40px; padding-bottom: 80px;">
+            <div class="container">
+                <div class="card cart-block">
+                    <div class="card-img"><img src="assets/images/milli-600x147-33.png" class="card-img-top"></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section mbr-section-md-padding mbr-footer footer1" id="contacts1-4" style="background-color: rgb(46, 46, 46); padding-top: 90px; padding-bottom: 90px;">
+    
+    <div class="container">
+        <div class="row">
+            <div class="mbr-footer-content col-xs-12 col-md-3">
+                <div><img src="assets/images/logo-qd-admin-tools-128x128.png"></div>
+            </div>
+            <div class="mbr-footer-content col-xs-12 col-md-3">
+                <p><strong>Sobre</strong><br>QD Admin Tools é uma ferramenta gratuita para lojistas VTEX. Oferecida por Quatro Digital, uma agência especialista em e-commerce. Atuando desde 2013, criando e desenvolvendo soluções para comércio eletrônico.</p>
+            </div>
+            <div class="mbr-footer-content col-xs-12 col-md-3">
+                <p><strong>Contatos</strong><br>
+Email: <br>contato@quatrodigital.com.br<br></p>
+            </div>
+            <div class="mbr-footer-content col-xs-12 col-md-3">
+                <p><strong>Links</strong><br><a href="http://agencia.quatrodigital.com.br/" target="_blank">Site Oficial</a><br><a href="http://blog.quatrodigital.com.br/" target="_blank">Blog</a></p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-h" style="background-color: rgb(50, 50, 50); padding-top: 1.75rem; padding-bottom: 1.75rem;">
+    
+    <div class="container">
+        <p class="text-xs-center">Copyright (c) 2017 Quatro Digital | Uma empresa pertencente ao Pro eCommerce Group | As imagens são meramente ilustrativas</p>
+    </div>
+</footer>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smooth-scroll/smooth-scroll.js"></script>
+  <script src="assets/dropdown/js/script.min.js"></script>
+  <script src="assets/touch-swipe/jquery.touch-swipe.min.js"></script>
+  <script src="assets/viewport-checker/jquery.viewportchecker.js"></script>
+  <script src="assets/jarallax/jarallax.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+  <input name="animation" type="hidden">
+  </body>
 </html>
