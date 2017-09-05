@@ -18,27 +18,30 @@ $(function() {
 		}
 	});
 
+	var tRegex = /.{13}T.{26}(.{13}).(.{15})(.{8})(.{15}).{36}(.{15})(.{40}).{10}.{15}.{10}.{22}/i;
+	var uRegex = /.{13}U.{3}(.{15})(.{15})(.{15})(.{15})(.{15})(.{15})(.{15})(.{15})(.{8})(.{8}).{4}(.{8})(.{15}).{60}/i;
 	function renderTable(data, table) {
 		var dtLine = data.split('\n');
 		var dataT, dataU;
 		var total = 0;
 		for(var i = 0; i < dtLine.length; i = i + 2){
-			dataT = dtLine[i].match(/.{13}T.{26}(.{13})..{15}(.{8})(.{15}).{36}(.{15})(.{40}).{10}.{15}.{10}.{22}/i);
+			dataT = dtLine[i].match(tRegex);
 			
 			if(!dataT || dataT.length < 2)
 				continue;
 
-			dataU = dtLine[i + 1].match(/.{13}U.{3}(.{15})(.{15})(.{15})(.{15})(.{15})(.{15})(.{15})(.{15})(.{8})(.{8}).{4}(.{8})(.{15}).{60}/i);
+			dataU = dtLine[i + 1].match(uRegex);
 
 			total += parseInt(dataU[6], 10);
 			$('<tr></tr>')
 				.append('<td class="nowrap" title="Nosso número">' + parseInt(dataT[1], 10) + '</td>')
-				.append('<td class="nowrap" title="CNPJ ou CPF">' + dataT[4] + '</td>')
-				.append('<td class="" title="Nome da empresa / pessoa">' + dataT[5] + '</td>')
-				.append('<td class="nowrap" title="Valor do boleto">R$ ' + number_format(parseInt(dataT[3], 10) / 100, 2, ',', '.') + '</td>')
+				.append('<td class="nowrap" title="Seu número">' + parseInt(dataT[2], 10) + '</td>')
+				.append('<td class="nowrap" title="CNPJ ou CPF">' + dataT[5] + '</td>')
+				.append('<td class="" title="Nome da empresa / pessoa">' + dataT[6] + '</td>')
+				.append('<td class="nowrap" title="Valor do boleto">R$ ' + number_format(parseInt(dataT[4], 10) / 100, 2, ',', '.') + '</td>')
 				.append('<td class="nowrap" title="Valor pago pelo sacado">R$ ' + number_format(parseInt(dataU[5], 10) / 100, 2, ',', '.') + '</td>')
 				.append('<td class="nowrap bg-success" title="Valor liquido a ser creditado">R$ ' + number_format(parseInt(dataU[6], 10) / 100, 2, ',', '.') + '</td>')
-				.append('<td class="nowrap" title="Data de vencimento do boleto">' + dataT[2].slice(0, 2) + '/' + dataT[2].slice(2, 4) + '/' + dataT[2].slice(4, 8) + '</td>')
+				.append('<td class="nowrap" title="Data de vencimento do boleto">' + dataT[3].slice(0, 2) + '/' + dataT[3].slice(2, 4) + '/' + dataT[3].slice(4, 8) + '</td>')
 				.append('<td class="nowrap" title="Data da ocorrência">' + dataU[9].slice(0, 2) + '/' + dataU[9].slice(2, 4) + '/' + dataU[9].slice(4, 8) + '</td>')
 				.append('<td class="nowrap" title="Data da efetivação do crédito">' + dataU[10].slice(0, 2) + '/' + dataU[10].slice(2, 4) + '/' + dataU[10].slice(4, 8) + '</td>')
 				.appendTo(table);
