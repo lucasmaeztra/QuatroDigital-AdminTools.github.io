@@ -48,8 +48,9 @@ $(function() {
 		}
 
 		$('<tr></tr>')
-			.append('<td colspan="5"></td>')
-			.append('<td class="nowrap bg-success" colspan="4">R$ ' + number_format(total / 100, 2, ',', '.') + '</td>')
+			.append('<td colspan="6"></td>')
+			.append('<td class="nowrap bg-success">R$ ' + number_format(total / 100, 2, ',', '.') + '</td>')
+			.append('<td colspan="3"></td>')
 			.appendTo(table);
 	}
 });
