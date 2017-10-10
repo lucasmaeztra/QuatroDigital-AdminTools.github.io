@@ -33,7 +33,7 @@
         <div class="row">
             <div class="col-xs-12">
                 <div class="json-qd-v1-manage-buttons">
-                    <button class="btn btn-primary btn-sm import-toggle"><i class="fa fa-upload"></i> Importar JSON</button>
+                    <button class="btn btn-primary btn-sm import-toggle"><i class="fa fa-upload"></i> Importar JSON / HTML</button>
                     <button class="btn btn-danger btn-sm json-qd-v1-delete-all"><i class="fa fa-trash"></i> Limpar Conteúdo</button>
                     <div class="dropdown lang-qd-v1-wrapper hidden">
                         <button class="btn btn-sm btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
@@ -70,15 +70,29 @@
 
         <div class="row">
             <div class="col-xs-12">
-                <button class="btn btn-primary btn-sm" onclick="$('.json-qd-v1-output-field').toggle(500)"><i class="fa fa-code"></i> Gerar Código JSON</button>
+                <p><button class="btn btn-primary btn-sm qd-btn-json"><i class="fa fa-code"></i> Gerar Código JSON</button></p>
+                <div class="qd-json-output-field code-qd-v1-output-field" style="display: none;">
+                    <div class="row">
+                        <div class='col-xs-12'>
+                            <textarea readonly="true" class='form-control' onclick="this.select()"></textarea>
+                            <p><button class="btn btn-success btn-sm"><i class="fa fa-code"></i> Copiar JSON</button></p>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="json-qd-v1-output-field" style="display: none;">
-            <div class="row json-output">
-                <div class='col-xs-12'>
-                    <textarea id='output' style='width: 100%; height: 300px; font-family: monospace; margin: 10px 0;' readonly class='form-control' onclick="this.select()"></textarea>
-                    <button class="btn btn-success btn-sm"><i class="fa fa-code"></i> Copiar JSON</button>
+        <div class="row">
+            <div class="col-xs-12">
+                <p><button class="btn btn-info btn-sm qd-btn-html"><i class="fa fa-html5"></i> Gerar Código HTML</button></p>
+                <div class="qd-html-output-field code-qd-v1-output-field" style="display: none;">
+                    <div class="row">
+                        <div class='col-xs-12'>
+                            <textarea readonly="true" class='form-control' onclick="this.select()"></textarea>
+                            <p><button class="btn btn-success btn-sm"><i class="fa fa-html5"></i> Copiar HTML</button></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
