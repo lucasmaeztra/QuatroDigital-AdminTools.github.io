@@ -15,7 +15,7 @@ $(function(){
             myimgmap._recalculate(id, coords);
         }
         
-        myimgmap.areas[id].ahref = a.href.replace(a.protocol+'//','').replace(a.host,'');
+        myimgmap.areas[id].ahref = a.href.replace(a.protocol+'//','').replace(a.host,'').replace('/digital-magazine/', '/');
         
         $('#img_area_' + id).find('input.img_href').val(link);
         myimgmap._repaintAll();
