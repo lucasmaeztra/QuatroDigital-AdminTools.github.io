@@ -1,0 +1,115 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!-- http://www.maschek.hu/imagemap/imgmap -->
+	<link rel="stylesheet" href="css/imgmap.css" type="text/css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+	<link rel="stylesheet" href="//qd-cdn.github.io/_qd-tools-visual-identity/qd-bootstrap-common.css" />
+	<link rel="stylesheet" href="css/page-style.css" type="text/css" />
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	crossorigin="anonymous"></script>
+
+	<script src="js/iframe.functions.base.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<form id="img_area_form">
+
+				<div class="col-sm-12 imageSelectorWrapper">
+					<fieldset>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="form-inline">
+									<label for="source_url2">Informe a imagem: </label>
+									<div class="input-group">
+										<input type="text" name="imgUrl" id="source_url2" class="form-control" placeholder="http://site.da.imagem" style="min-width: 500px;">
+									</div>
+									<button onclick="gui_loadImage(document.getElementById('source_url2').value)" class="btn btn-default" type="button">Carregar</button>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+				</div>
+
+				<div class="col-sm-12 imageEditorWrapper" style="display:none;">
+					<fieldset>
+						<h4>
+							Imagem
+						</h4>
+
+						<div class="form-inline form-group">
+							<label for="dd_zoom">Zoom:</label>
+							<input type="hidden" id="dd_zoom" value="1">
+							<label class="radio-inline">
+								<input type="radio" name="dd_zoom" class="radioZoom" value="0.25"> 25%
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="dd_zoom" class="radioZoom" value="0.5"> 50%
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="dd_zoom" class="radioZoom" value="1" checked> 100%
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="dd_zoom" class="radioZoom" value="2"> 200%
+							</label>
+							<label class="radio-inline">
+								<input type="radio" name="dd_zoom" class="radioZoom" value="3"> 300%
+							</label>
+
+							<a id="changeImage" href="#" class="btn btn-default pull-right">
+								<span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+								Trocar Imagem
+							</a>
+						</div>
+
+						<div class="pic_container_wrapper">
+							<div id="pic_container">
+							</div>
+						</div>
+					</fieldset>
+					<hr style="width:100%; float: left;">
+				</div>
+
+				<div class="col-sm-12 imageMappedWrapper" style="display:none;">
+					<fieldset>
+						<h4>
+							Áreas mapeadas
+						</h4>
+						<div>
+							<div id="button_container">
+								<!-- buttons come here -->
+								<button type="button" onclick="myimgmap.addNewArea()" class="btn btn-success">Adicionar</button>
+							</div>
+						</div>
+						<table class="table table-striped">
+							<thead>
+								<th>ID</th>
+								<th class="hidden">Em edição</th>
+								<th>Link do produto</th>
+								<th></th>
+								<th></th>
+							</thead>
+							<tbody id="form_container">
+								
+							</tbody>
+							<!-- form elements come here -->
+						</table>
+					</fieldset>
+				</div>
+			
+			</form>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/imgmap.js"></script>
+	<script type="text/javascript" src="js/default_interface.js"></script>
+</body>
+</html>

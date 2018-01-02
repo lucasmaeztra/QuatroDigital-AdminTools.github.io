@@ -1,0 +1,33 @@
+.tab-pane {
+    padding-top: 20px;
+}
+
+.nav-tabs #addTab {
+    margin-top: 5px;
+    border-radius: 4px;
+    border-top: dashed 1px #ddd;
+    border-right: dashed 1px #ddd;
+    border-left: dashed 1px #ddd;
+}
+
+#uploadHTML {
+    margin-right: 5px;
+}
+
+#saveCode {
+    cursor: not-allowed;
+}
+
+li.draggable a span {
+    vertical-align: text-top;
+    margin-left: 5px;
+}
+
+.removeTab {
+    color: #D9534F;
+    cursor: pointer;
+}
+
+header.qd-v1-header {
+    margin-bottom: 15px;
+}
