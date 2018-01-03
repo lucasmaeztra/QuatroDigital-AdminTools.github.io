@@ -1,0 +1,8 @@
+// textarea{display: block;width: 100%;height: 100px;resize:vertical;}
+.nowrap{white-space: nowrap;}
+.drop-files{outline: 2px dashed #92b0b3;outline-offset:-10px;padding: 20px; text-align: center;margin-bottom: 16px;}
+.drop-files input{display: inline-block;}
+.icon{font-size: 32px;}
+.table-base{display: none;}
+.tables-wrapper >div{padding:12px 4px;}
+.tables-wrapper >div:nth-child(odd) {background: #eee; }
