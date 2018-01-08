@@ -506,6 +506,8 @@ function gui_zoom() {
 }
 
 function gui_loadImage(src) {
+	if(src.length < 1)
+		return;
 	//reset zoom dropdown
 	// document.getElementById('dd_zoom').value = '1';
 	var pic = document.getElementById('pic_container').getElementsByTagName('img')[0];
