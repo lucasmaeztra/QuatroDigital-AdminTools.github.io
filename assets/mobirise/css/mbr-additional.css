@@ -3,6 +3,7 @@
 
 
 
+
 body,
 input,
 textarea,
@@ -515,6 +516,19 @@ h6,
 }
 #msg-box4-19 P {
   color: #ffffff;
+}
+#features4-1h .card-subtitle {
+  color: #bcbcbc;
+  text-align: center;
+  font-size: 24px;
+}
+#features4-1h .iconbox {
+  background-color: #f3f3f3;
+  border-color: #f3f3f3;
+}
+#features4-1h .btn {
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
 }
 #content1-z P {
   text-align: center;
