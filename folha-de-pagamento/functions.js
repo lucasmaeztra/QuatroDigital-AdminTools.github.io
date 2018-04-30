@@ -23,11 +23,24 @@ $(function() {
 		}
 		fileContent = newLines.join('\n');
 		log('Leitura e padronização do arquivo',  fileContent );
-		
+
+		// Obtendo o período ao qual corresponde os dados
+		var date = fileContent.match(/Período de: (\d+)\/(\d+)\/(\d+)/i).splice(1, 3);
+
+		// Removendo os cabeçalhos das páginas
+		// var pageSeparator = '------------------------------------------------------------------------------------------------------------------------------';
+		var pageHeaderRegex = /.-+\n.\+-+\+\n.\| Folha([^\n]+\n){5}.\+-+\+\n/ig;
+		fileContent = fileContent.replace(pageHeaderRegex, '');
+		// Remove topo e rodapé restante
+		var headerRegex = /.\+-+\+\n.\| Folha([^\n]+\n){7}.\|\s+Anexos[^\n]+\n(.\+-+\+\n){2}/i
+		fileContent = fileContent.replace(headerRegex, '');
+		var footerSeparator = '+----------------------------------------------------------------------------------------------------------------------------+\n|----------------------------------------------------------------------------------------------------------------------------|\n|G';
+		fileContent = fileContent.split(footerSeparator).shift();
+		log('Apenas dados dos funcionários',  fileContent );
+
 		// Separando os funcionários
 		var separator = '+----------------------------------------------------------------------------------------------------------------------------+\n+----------------------------------------------------------------------------------------------------------------------------+'
-		var eofSeparator = '+----------------------------------------------------------------------------------------------------------------------------+\n|----------------------------------------------------------------------------------------------------------------------------|\n|G';
-		lines = fileContent.split(eofSeparator).shift().split(separator);
+		lines = fileContent.split(separator);
 		newLines = [];
 		for (var i in lines) {
 			if (lines[i].indexOf('Cod: ') > -1)
@@ -38,8 +51,6 @@ $(function() {
 		fileContent = newLines.join('\n\n#NOVO REGISTRO#');
 		log('Separando por funcionários',  fileContent );
 
-		// Obtendo o período ao qual corresponde os dados
-		var date = header.match(/Período de: (\d+)\/(\d+)\/(\d+)/i).splice(1, 3);
 
 		// Separando os dados de cada funcionário
 		employeesProcessor(employees, date);
@@ -73,7 +84,7 @@ $(function() {
 			tempData = employee[0].match(eProfRegexB);
 			row.add(null, 'Admissão', null, tempData[1].trim());
 			row.add(null, 'Situação', null, tempData[2].trim());
-			row.add(null, 'Salário', null, tempData[3].trim());
+			row.add(null, 'Salário (header)', null, tempData[3].trim());
 			// Extrato
 			tempData = employee[1].split(/?\|/);
 			newTempData = [];
@@ -114,7 +125,8 @@ $(function() {
 	}
 	// Imprimindo a tabela
 	function tablePrint() {
-		console.log(outTable.join('\n'));
+		// console.log(outTable.join('\n'));
+		$('.output-wrapper textarea').val(outTable.join('\n'));
 	}
 
 	// Log do processamento do arquivo
