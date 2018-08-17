@@ -1,0 +1,12 @@
+{
+    "import": "Importar",
+    "emptyContent": "Limpar Conteúdo",
+    "invalidContent": "O conteúdo inserido não é válido",
+    "loadContentPlaceholder": "Cole o conteúdo aqui e clique em 'Carregar Conteúdo",
+    "loadContent": "Carregar conteúdo",
+    "downloadFile": "Download versão arquivo",
+    "contentCopyPaste": "Conteúdo (copiar e colar)",
+    "contentDownload": "Download Arquivo",
+    "generateCode": "Gerar Código",
+    "copy": "Copiar"
+}
