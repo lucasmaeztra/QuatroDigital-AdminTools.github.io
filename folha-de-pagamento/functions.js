@@ -64,11 +64,11 @@ $(function() {
 
 		// Regex
 		var eProfRegexA = /Cod: (\d+)[^:]+:([\w\s]+)Funcao:([\w\s]+)Dep\.IR:/i;
-		var eProfRegexB = /Admissão: ([\d\/]+).+Situação:([\wÀ-ÿ\s]+).+Ocorrencia:.+Salario:\s*([\d\.,]+)/i;
+		var eProfRegexB = /Admissão: ([\d\/]+).+Situação:([\wÀ-ÿ\s]+).+(Ocorrencia:.+)?Salario:\s*([\d\.,]+)/i;
 		var statementRegexA = /([\d]+)(.+)\s+([\d\.,]+)\s+([\d\.,]+)$/i;
 		var statementRegexB = /([\d]+)(.+)\s+([\d\.,]+)$/i;
 		var summaryRegexA = /[\d\.]+,[\d]+/i;
-		var summaryRegexB = /[\|0-9]\s([A-ZÀ-Ý][^:]+)/i;
+		var summaryRegexB = /[\|0-9]?\s([A-ZÀ-Ý][^:]+)/i;
 
 		// Processando os dados
 		var employee;
@@ -84,7 +84,7 @@ $(function() {
 			tempData = employee[0].match(eProfRegexB);
 			row.add(null, 'Admissão', null, tempData[1].trim());
 			row.add(null, 'Situação', null, tempData[2].trim());
-			row.add(null, 'Salário (header)', null, tempData[3].trim());
+			row.add(null, 'Salário (header)', null, tempData[4].trim());
 			// Extrato
 			tempData = employee[1].split(/?\|/);
 			newTempData = [];
@@ -125,7 +125,6 @@ $(function() {
 	}
 	// Imprimindo a tabela
 	function tablePrint() {
-		// console.log(outTable.join('\n'));
 		$('.output-wrapper textarea').val(outTable.join('\n'));
 	}
 
